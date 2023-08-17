@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operations</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto mt-10 p-5 bg-white rounded shadow-md">
+        <h2 class="text-2xl font-bold mb-5">User Management</h2>
+
+        <form id="userForm" class="space-y-4">
+            <div>
+                <label for="username" class="block text-sm font-medium text-gray-600">Id:</label>
+                <input type="text" id="Id" class="mt-1 p-2 w-full border rounded-md" required>
+            </div>
+            <div>
+                <label for="username" class="block text-sm font-medium text-gray-600">Firstname:</label>
+                <input type="text" id="firstname" class="mt-1 p-2 w-full border rounded-md" required>
+            </div>
+            <div>
+                <label for="username" class="block text-sm font-medium text-gray-600">Lastname:</label>
+                <input type="text" id="lastname" class="mt-1 p-2 w-full border rounded-md" required>
+            </div>
+            <div>
+                <label for="phone" class="block text-sm font-medium text-gray-600">Phone:</label>
+                <input type="tel" id="phone" class="mt-1 p-2 w-full border rounded-md" required>
+            </div>
+
+            <div class="space-x-2 mt-4">
+                <button type="button" onclick="createUser()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    Create
+                </button>
+                <button type="button" onclick="updateUser()" class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">
+                    Update
+                </button>
+                <button type="button" onclick="deleteUser()" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                    Delete
+                </button>
+            </div>
+        </form>
+
+        <div id="userDetails" class="mt-10">
+            <!-- User details will appear here -->
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
