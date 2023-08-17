@@ -1,4 +1,3 @@
-
 // Function to Create a user
 function createUser() {
     const user = {
